@@ -28,6 +28,26 @@
       margin-bottom: 30px;
       text-align: center;
     }
+    .section {
+      max-width: 600px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .section h3 {
+      color: #00e1ff;
+      margin-bottom: 10px;
+    }
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .section ul li::before {
+      content: "\2022";
+      color: #a0ffa0;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
     .btn {
       background: #00e1ff;
       color: #000;
@@ -59,16 +79,39 @@
       font-size: 0.9rem;
       color: #666;
     }
+    img.logo {
+      max-width: 160px;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
+  <img src="https://mcskryt.github.io/pumpx-landing/logo.png" alt="PumpX logo" class="logo">
   <h1>PumpX</h1>
   <h2>Ett nytt sätt att tanka – utan kort, utan krångel, med en enda faktura.</h2>
+
   <form class="form">
     <input type="text" placeholder="Ditt namn" required />
     <input type="email" placeholder="Din e-post" required />
     <button type="submit" class="btn">Jag vill testa appen</button>
   </form>
+
+  <div class="section">
+    <h3>Vad är PumpX?</h3>
+    <p>PumpX är en mobilapp som låter dig aktivera en bensinpump via mobilen, tanka, och sedan få en samlad faktura varje månad. Inget kort, inga kvitton – bara smartare tankning.</p>
+
+    <h3>Varför är det bra?</h3>
+    <ul>
+      <li>Slipp kort, kvitton och koder</li>
+      <li>Samlad månadsfaktura direkt till dig</li>
+      <li>Fungerar på flera stationer – inte bara en kedja</li>
+      <li>Snabb och enkel aktivering i mobilen</li>
+    </ul>
+
+    <h3>För vem passar det?</h3>
+    <p>Privatpersoner, företagare och pendlare som vill ha enkel, tydlig och framtidssmart tankning.</p>
+  </div>
+
   <footer>
     &copy; 2025 PumpX. Skapat av Martin Falk.
   </footer>
